@@ -1,0 +1,62 @@
+version: "3.1"
+
+stories:
+  - story: ask monster weakness pos
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_monster_weakness
+      - action: action_monster_info
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: ask monster weakness neg
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_monster_weakness
+      - action: action_monster_info
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: ask weapon info pos
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_weapon_info
+      - action: action_weapon_info
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+- story: interactive_story_1
+  steps:
+  - intent: ask_help
+  - action: utter_help_confirm
+  - intent: out_of_scope
+    entities:
+    - weapon: Bow
+  - slot_was_set:
+    - weapon: Bow
+  - intent: ask_weapon_info
+    entities:
+    - weapon: Bow
+  - intent: ask_weapon_info
+    entities:
+    - weapon: Gunlance
+  - slot_was_set:
+    - weapon: Gunlance
+  - action: action_weapon_info
+  - slot_was_set:
+    - weapon: null
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy

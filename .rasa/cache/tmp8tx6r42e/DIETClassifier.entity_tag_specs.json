@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-item",
+      "2": "I-item",
+      "3": "L-item",
+      "4": "U-item",
+      "5": "B-monster",
+      "6": "I-monster",
+      "7": "L-monster",
+      "8": "U-monster",
+      "9": "B-quest",
+      "10": "I-quest",
+      "11": "L-quest",
+      "12": "U-quest",
+      "13": "B-weapon",
+      "14": "I-weapon",
+      "15": "L-weapon",
+      "16": "U-weapon",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-item": 1,
+      "I-item": 2,
+      "L-item": 3,
+      "U-item": 4,
+      "B-monster": 5,
+      "I-monster": 6,
+      "L-monster": 7,
+      "U-monster": 8,
+      "B-quest": 9,
+      "I-quest": 10,
+      "L-quest": 11,
+      "U-quest": 12,
+      "B-weapon": 13,
+      "I-weapon": 14,
+      "L-weapon": 15,
+      "U-weapon": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

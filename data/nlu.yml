@@ -1,0 +1,266 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey PalicoBot
+      - Hi there
+      - What's up
+      - Hellooooo
+      - Hi bot
+      - Start
+      - Yo
+      - Hey
+      - PalicoBot
+  - intent: goodbye
+    examples: |
+      - Bye
+      - See you later
+      - Goodbye
+      - Exit
+      - Bye bye
+      - Goodbye bot
+      - Farewell
+      - Take care
+      - Thanks, bye
+      - See ya
+      - Later
+      - Goodbye PalicoBot
+  - intent: affirm
+    examples: |
+      - Yes
+      - Yeah
+      - Sure
+      - Of course
+      - Absolutely
+      - Definitely
+      - Indeed
+      - Correct
+      - Right
+      - Affirmative
+      - Yea
+      - Yup
+      - Yep
+      - Ok
+      - Okay
+      - Fine
+      - Alright
+      - Agreed
+      - True
+      - Sounds good
+      - Certainly
+      - Sure thing
+      - Sure, thanks
+      - Yes, thanks
+      - Yes, please
+      - Yes, that's right
+      - Yes, that's correct
+      - Yes, that's it
+      - Yes, that's what I want
+      - Yes, that's what I need
+      - Yes, that's what I'm looking for
+      - Yes, that's what I'm after
+      - Yes, that's what I'm asking for
+      - Yes, that's what I'm talking about
+      - yep
+  - intent: deny
+    examples: |
+      - No
+      - Nope
+      - Nah
+      - Not really
+      - Not sure
+      - Not at all
+      - I don't think so
+      - I don't know
+      - I'm not sure
+      - I'm not certain
+      - I'm not confident
+      - I'm not convinced
+      - I'm not positive
+      - No?
+      - No, thanks
+      - Maybe not
+      - Probably not
+  - intent: ask_help
+    examples: |
+      - Can you help me?
+      - I need help
+      - Help me
+      - Can you assist me?
+      - I need assistance
+      - Help
+      - Help me out
+      - Help please
+      - Help me please
+      - Can you help me with something?
+      - Can you help me with this?
+      - Can you help me with that?
+      - Can you help me with a question?
+      - Can you help me with a problem?
+      - Can you help me with an issue?
+      - Can you help me with a task?
+      - Can you help me with an item?
+      - Can you help me with a monster's weakness?
+      - Can you help me with a weapon's info?
+      - Can you help me with an item's info?
+  - intent: ask_monster_weakness
+    examples: |
+      - Can you tell me the weakness of [Rathalos](monster)?
+      - [Kirin](monster) weakness
+      - [Rajang](monster) ?
+      - [Anjanath](monster)'s weakness
+      - Can you tell me how to beat [Rathian](monster)?
+      - How to beat [Nergigante](monster)?
+      - What's the weakness of [Acidic Glavenus](monster)?
+      - Tell me [Alatreon](monster)'s weakness
+      - What should I use against an [Ancient Leshen](monster)?
+      - How can I defeat [Anjanath](monster)?
+      - What's effective against [Azure Rathalos](monster)?
+      - What's the best weapon against [Banbaro](monster)?
+      - What's the best element against [Barioth](monster)?
+      - What's the best status ailment against [Barroth](monster)?
+      - What's the best way to defeat [Xeno'jiiva](monster)?
+      - What's the best strategy against [Kulve Taroth](monster)?
+      - What's the best tactic against [Behemoth](monster)?
+      - What's the best approach against [Black Diablos](monster)?
+      - What's the best method against [Brachydios](monster)?
+      - How do I beat [Xeno'Jiiva](monster)?
+      - How to kill [Zinogre](monster)?
+      - What tactics are the best to take down [Nergigante](monster)?
+  - intent: ask_weapon_info
+    examples: |
+      - Tell me about the [Great Sword](weapon)
+      - What's the best way to use a [Long Sword](weapon)?
+      - What's the best combo for the [Dual Blades](weapon)?
+      - What's the best attack for the [Hammer](weapon)?
+      - What's the best defense for the [Lance](weapon)?
+      - How do I use the [Gunlance](weapon)?
+      - Help me with the [Switch Axe](weapon)
+      - The [Hunting Horn](weapon) is confusing
+      - Need some tips for the [Light Bowgun](weapon)
+      - How to use the [Heavy Bowgun](weapon)?
+      - I'm confused with the [Bow](weapon)
+      - I find the [Charge Blade](weapon) difficult
+      - What's a [Switch Axe](weapon)?
+      - How do I use the [Bow](weapon)?
+      - How should I use the [Hunting Horn](weapon)?
+      - I need advice on the [Insect Glaive](weapon)
+      - Need advice on the [Bow](weapon)
+      - How do i use the [gunlance]{"entity": "weapon", "value": "Gunlance"}?
+
+  - intent: ask_mechanic_info
+    examples: |
+      - How does [Affinity](mechanic) work?
+      - What is [Sharpness](mechanic)?
+      - How does [Elemental Damage](mechanic) work?
+      - What is [Elderseal](mechanic)?
+      - How does [Gunlance Shelling](mechanic) work?
+      - What is [Bowgun Ammo](mechanic)?
+      - How to put a monster to [Sleep](mechanic)?
+      - How do I use [Traps](mechanic)?
+      - What are [Kinsects](mechanic)?
+      - What are [Decorations](mechanic)?
+      - How do i use [gems]{"entity": "mechanic", "value": "Decorations"}?
+      - How do I get more [health](mechanic)
+      - How do I get more [stamina](mechanic)
+      - How do I [upgrade](mechanic) my weapon?
+      - How do I [upgrade](mechanic) my armor?
+
+  - intent: ask_weapon_recommend
+    examples: |
+      - What weapon do you recommend to me?
+      - What weapon should I use?
+      - What weapon is the best?
+      - Which weapon is the strongest?
+      - What weapon is the most powerful?
+      - What weapon is the most effective?
+      - What weapon is the most efficient?
+      - Which weapon is the best for beginners?
+
+  - intent: want_weapon_strong
+    examples: |
+      - I want the use a big weapon
+      - I want to use a strong weapon
+      - I prefer a weapon with big damage
+      - I want a weapon that can deal a lot of damage
+      - I want a weapon that can hit hard
+      - I want to bonk monsters
+      - I want to smash monsters
+      - I want to crush monsters
+      - I like slow weapons
+      - I like stunning monsters
+
+  - intent: want_weapon_fast
+    examples: |
+      - I want a fast weapon
+      - I want a weapon that can attack quickly
+      - I want a weapon that can attack fast
+      - I want a weapon that can attack rapidly
+      - I prefer to be agile
+      - I like quick weapons
+      - I want to mash buttons
+      - I want to spam attacks
+
+  - intent: want_weapon_beginner
+    examples: |
+      - I'm new to the game
+      - I'm a beginner
+      - I'm a noob
+      - I need an easy weapon
+      - I need a weapon for beginners
+      - What are the best weapons for beginners?
+      - What weapon is the easiest to use?
+      - What weapon is the most beginner-friendly?
+      - I need a weapon that's easy to learn
+      - I need a weapon that's easy to master
+      - I need something simple
+      - I want something easy
+
+  - intent: ask_item_info
+    examples: |
+      - What does the [Mega Potion](item) do?
+      - How do I get [Flashbugs](item)?
+      - What's the use of [Tranq Bombs](item)?
+      - What is [Pitfall trap](item) used for?
+      - How do I use [Shock Trap](item)?
+      - What's the purpose of [Dung Pod](item)?
+      - [Farcasters](item) are confusing
+
+  - intent: out_of_scope
+    examples: |
+      - I want to know about the weather.
+      - Can you tell me the time?
+      - What's the date today?
+      - What is 2+2?
+      - Can you tell me a joke?
+      - Can you sing a song?
+      - Can you dance?
+      - Can you tell me a story?
+      - Can you tell me a riddle?
+      - Can you tell me a lie?
+      - How do I get a girlfriend?
+      - How do I take down the government?
+      - How do I make a bomb?
+      - How do I hack a computer?
+      - How do I rob a bank?
+      - Tell me the secrets of the universe
+      - 2x^3-4x^2+2x-1=0
+      - What is the meaning of life?
+
+  - intent: bot_challenge
+    examples: |
+      - Are you a bot?
+      - Am I talking to a bot?
+      - What is this bot?
+      - Are you a chatbot?
+      - Are you a human?
+      - Am I talking to a human?
+      - Who is this?
+      - What are you?
+      - What is your purpose?
+      - Stop this
+      - What are you doing?
+      - What is this?
+      - What is your name?

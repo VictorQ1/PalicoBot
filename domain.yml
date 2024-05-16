@@ -1,0 +1,66 @@
+version: "3.1"
+slots:
+  monster:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: monster
+  weapon:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: weapon
+entities:
+  - weapon
+  - monster
+actions:
+  - utter_happy
+  - action_weapon_info
+  - utter_did_that_help
+  - utter_help_confirm
+  - action_monster_info
+intents:
+  - affirm
+  - ask_help
+  - ask_monster_weakness
+  - ask_weapon_info
+  - bot_challenge
+  - deny
+  - goodbye
+  - greet
+  - out_of_scope
+  - ask_mechanic_info
+  - ask_weapon_recommend
+  - want_weapon_strong
+  - want_weapon_fast
+  - want_weapon_beginner
+responses:
+  utter_greet:
+    - text: Hello! How can I help you today?
+  utter_did_that_help:
+    - text: Did that help you?
+  utter_happy:
+    - text: Great, let me know if you need anything else.
+  utter_sad:
+    - text: I'm sorry! Let's try again.
+  utter_goodbye:
+    - text: See you later!
+  utter_iamabot:
+    - text: I am PalicoBot, a bot designed to help with Monster Hunter World questions. If you have any inconveniences with my responses, please let my developer know.
+  utter_help_confirm:
+    - text: Sure. What do you need help with?
+  utter_out_of_scope:
+    - text: I'm sorry, I can't help with that.
+  utter_rephrase:
+    - text: I'm sorry, I didn't understand. Can you try rephrasing that?
+  utter_weapon_recommend:
+    - text: Your choice of weapon largely depends on your playstyle and preferences. What type of weapon are you looking for?
+  utter_weapon_strong:
+    - text: If you're interested in strong/big weapons, you might want to try the Great Sword, Hammer, or Charge Blade. These weapons are slow, but deal massive damage with powerful, hefty blows.
+  utter_weapon_fast_fast:
+    - text: If you're interested in fast weapons, you might want to try the Dual Blades, Sword and Shield, Long Sword or Insect Glaive. These weapons are quick and agile, allowing you to deliver rapid-flurry attacks with high mobility.
+  utter_weapon_beginner:
+    - text: If you're new to Monster Hunter, you might want to start with the Sword and Shield, Long Sword, or Dual Blades. These weapons are relatively easy to pick up and play, while dealing good ammounts of damage, making them great for beginners.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
