@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-item",
+      "2": "I-item",
+      "3": "L-item",
+      "4": "U-item",
+      "5": "B-mechanic",
+      "6": "I-mechanic",
+      "7": "L-mechanic",
+      "8": "U-mechanic",
+      "9": "B-monster",
+      "10": "I-monster",
+      "11": "L-monster",
+      "12": "U-monster",
+      "13": "B-weapon",
+      "14": "I-weapon",
+      "15": "L-weapon",
+      "16": "U-weapon",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-item": 1,
+      "I-item": 2,
+      "L-item": 3,
+      "U-item": 4,
+      "B-mechanic": 5,
+      "I-mechanic": 6,
+      "L-mechanic": 7,
+      "U-mechanic": 8,
+      "B-monster": 9,
+      "I-monster": 10,
+      "L-monster": 11,
+      "U-monster": 12,
+      "B-weapon": 13,
+      "I-weapon": 14,
+      "L-weapon": 15,
+      "U-weapon": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

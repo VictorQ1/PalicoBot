@@ -20,3 +20,33 @@ rules:
     steps:
       - intent: nlu_fallback
       - action: utter_rephrase
+
+  - rule: Say "Great" whenever the user affirms
+    steps:
+      - intent: affirm
+      - action: utter_happy
+
+  - rule: Say "Hello! How can I help you today?" whenever the user greets
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say "I'm sorry! Let's try again." whenever the user denies
+    steps:
+      - intent: deny
+      - action: utter_sad
+
+  - rule: Say "Did that help you?" after giving monster information
+    steps:
+      - action: action_monster_info
+      - action: utter_did_that_help
+
+  - rule: Say "Did that help you?" after giving weapon information
+    steps:
+      - action: action_weapon_info
+      - action: utter_did_that_help
+
+  - rule: Say "Did that help you?" after giving mechanic information
+    steps:
+      - action: action_mechanic_info
+      - action: utter_did_that_help

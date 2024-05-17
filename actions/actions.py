@@ -432,74 +432,74 @@ class ActionWeaponInfo(Action):
     ) -> List[Dict[Text, Any]]:
         weapon_data = {
             "Great Sword": {
-                "description": "is a powerful weapon that deals massive damage with its charged attacks. It is slow but can stagger monsters and break parts easily. The True Charge Slash is the most powerful attack in the Great Sword's arsenal, dealing massive damage when fully charged. The weapon is best used by players who can predict monster movements and exploit openings.",
-                "strengths": "High damage, good reach, can stagger monsters, can break parts easily.",
-                "weaknesses": "Slow attack speed, limited mobility, requires good timing and positioning.",
+                "description": "is a powerful weapon that deals massive damage with its charged attacks. It is slow but can stagger monsters and break parts easily. The True Charge Slash is the most powerful attack in the Great Sword's arsenal, dealing massive damage when fully charged. The weapon is best used by players who can predict monster movements and exploit openings",
+                "strengths": "has high damage, good reach, can stagger monsters, can break parts easily.",
+                "weaknesses": "has slow attack speed, limited mobility, requires good timing and positioning.",
             },
             "Long Sword": {
                 "description": "is a versatile weapon that deals high damage with its Spirit Blade attacks. It has good reach and can perform quick combos to build up Spirit Gauge levels. The Spirit Helm Breaker is the Long Sword's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Spirit Gauge levels and avoid getting hit.",
-                "strengths": "High damage, good reach, fast attack speed, Spirit Gauge mechanic.",
-                "weaknesses": "Can trip teammates, requires good positioning, limited defensive options.",
+                "strengths": "has high damage, good reach, fast attack speed, Spirit Gauge mechanic.",
+                "weaknesses": "it can trip teammates, requires good positioning, limited defensive options.",
             },
             "Sword and Shield": {
-                "description": "is a fast and agile weapon that allows for quick attacks and good mobility. It can use items without sheathing the weapon, making it versatile in combat. The Perfect Rush combo is the Sword and Shield's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain a high tempo of attacks and adapt to different situations.",
-                "strengths": "Fast attack speed, good mobility, can use items without sheathing, versatile in combat.",
-                "weaknesses": "Low damage per hit, limited range, requires good timing and positioning.",
+                "description": "is a fast and agile weapon that allows for quick attacks and good mobility. It can use items without sheathing the weapon, making it versatile in combat. The Perfect Rush combo is the Sword and Shield's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain a high tempo of attacks and adapt to different situations",
+                "strengths": "has fast attack speed, good mobility, can use items without sheathing, versatile in combat.",
+                "weaknesses": "has low damage per hit, limited range, requires good timing and positioning.",
             },
             "Dual Blades": {
-                "description": "are fast and aggressive weapons that excel at dealing elemental damage and inflicting status effects. They have good mobility and can perform long combos to build up Demon Mode levels. The Demon Dance is the Dual Blades' most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Demon Mode levels and exploit elemental weaknesses.",
-                "strengths": "Fast attack speed, good mobility, high elemental damage, can inflict status effects.",
-                "weaknesses": "Low damage per hit, limited range, high stamina consumption.",
+                "description": "are fast and aggressive weapons that excel at dealing elemental damage and inflicting status effects. They have good mobility and can perform long combos to build up Demon Mode levels. The Demon Dance is the Dual Blades' most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Demon Mode levels and exploit elemental weaknesses",
+                "strengths": "has fast attack speed, good mobility, high elemental damage, can inflict status effects.",
+                "weaknesses": "has low damage per hit, limited range, high stamina consumption.",
             },
             "Hammer": {
-                "description": "is a heavy weapon that deals high damage with its charged attacks. It can stun monsters and break parts easily with its impact damage. The Big Bang combo is the Hammer's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can land charged attacks on monster heads and exploit stun openings.",
-                "strengths": "High damage, can stun monsters, can break parts easily, good reach.",
-                "weaknesses": "Slow attack speed, limited mobility, requires good timing and positioning.",
+                "description": "is a heavy weapon that deals high damage with its charged attacks. It can stun monsters and break parts easily with its impact damage. The Big Bang combo is the Hammer's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can land charged attacks on monster heads and exploit stun openings",
+                "strengths": "has high damage, can stun monsters, can break parts easily, good reach.",
+                "weaknesses": "has slow attack speed, limited mobility, requires good timing and positioning.",
             },
             "Hunting Horn": {
-                "description": "is a support weapon that can buff teammates with melodies and deal damage with its attacks. It has good reach and can perform long combos to build up melodies. The Echo Wave - Dragon is the Hunting Horn's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain melodies and support the team with buffs.",
-                "strengths": "Support abilities, good reach, can buff teammates, versatile in combat.",
-                "weaknesses": "Low damage per hit, limited range, requires good timing and positioning.",
+                "description": "is a support weapon that can buff teammates with melodies and deal damage with its attacks. It has good reach and can perform long combos to build up melodies. The Echo Wave - Dragon is the Hunting Horn's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain melodies and support the team with buffs",
+                "strengths": "has support abilities, good reach, can buff teammates, versatile in combat.",
+                "weaknesses": "has low damage per hit, limited range, requires good timing and positioning.",
             },
             "Lance": {
-                "description": "is a defensive weapon that excels at blocking attacks and countering with precise thrusts. It has good reach and can perform long combos to build up Guard levels. The Counter Thrust is the Lance's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Guard levels and exploit counter openings.",
-                "strengths": "High defense, good reach, can counter attacks, versatile in combat.",
-                "weaknesses": "Low mobility, limited range, requires good timing and positioning.",
+                "description": "is a defensive weapon that excels at blocking attacks and countering with precise thrusts. It has good reach and can perform long combos to build up Guard levels. The Counter Thrust is the Lance's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Guard levels and exploit counter openings",
+                "strengths": "has high defense, good reach, can counter attacks, versatile in combat.",
+                "weaknesses": "has limited range, requires good timing and positioning.",
             },
             "Gunlance": {
-                "description": "is an explosive weapon that deals high damage with its shelling attacks. It has good reach and can perform long combos to build up Wyrmstake levels. The Wyrmstake Blast is the Gunlance's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Wyrmstake levels and exploit shelling openings.",
-                "strengths": "High damage, good reach, can shell attacks, versatile in combat.",
-                "weaknesses": "Low mobility, limited range, requires good timing and positioning.",
+                "description": "is an explosive weapon that deals high damage with its shelling attacks. It has good reach and can perform long combos to build up Wyrmstake levels. The Wyrmstake Blast is the Gunlance's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Wyrmstake levels and exploit shelling openings",
+                "strengths": "has high damage, good reach, can shell attacks, versatile in combat.",
+                "weaknesses": "has low mobility, limited range, requires good timing and positioning.",
             },
             "Switch Axe": {
-                "description": "is a versatile weapon that can switch between axe and sword modes to deal high damage. It has good reach and can perform long combos to build up Amped levels. The Zero Sum Discharge is the Switch Axe's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Amped levels and exploit sword mode openings.",
-                "strengths": "High damage, good reach, can switch between modes, versatile in combat.",
-                "weaknesses": "Low mobility, limited range, requires good timing and positioning.",
+                "description": "is a versatile weapon that can switch between axe and sword modes to deal high damage. It has good reach and can perform long combos to build up Amped levels. The Zero Sum Discharge is the Switch Axe's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Amped levels and exploit sword mode openings",
+                "strengths": "has high damage, good reach, can switch between modes, versatile in combat.",
+                "weaknesses": "doesn't have much mobility, limited range, requires good timing and positioning.",
             },
             "Charge Blade": {
-                "description": "is a complex weapon that can switch between sword and axe modes to deal high damage. It has good reach and can perform long combos to build up Phial levels. The Super Amped Element Discharge is the Charge Blade's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Phial levels and exploit axe mode openings.",
+                "description": "is a complex weapon that can switch between sword and axe modes to deal high damage. It has good reach and can perform long combos to build up Phial levels. The Super Amped Element Discharge is the Charge Blade's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Phial levels and exploit axe mode openings",
                 "strengths": "High damage, good reach, can switch between modes, versatile in combat.",
                 "weaknesses": "Complex mechanics, high skill ceiling, requires good timing and positioning.",
             },
             "Insect Glaive": {
-                "description": "is an agile weapon that can vault into the air and perform aerial attacks. It has good reach and can perform long combos to build up Kinsect levels. The Kinsect Extract is the Insect Glaive's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Kinsect levels and exploit aerial openings.",
+                "description": "is an agile weapon that can vault into the air and perform aerial attacks. It has good reach and can perform long combos to build up Kinsect levels. The Kinsect Extract is the Insect Glaive's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Kinsect levels and exploit aerial openings",
                 "strengths": "High mobility, good reach, can vault into the air, versatile in combat.",
                 "weaknesses": "Low damage per hit, limited range, requires good timing and positioning.",
             },
             "Bow": {
-                "description": "is a ranged weapon that can deal high damage with its charged shots. It has good reach and can perform long combos to build up Charge levels. The Dragon Piercer is the Bow's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Charge levels and exploit weak point openings.",
+                "description": "is a ranged weapon that can deal high damage with its charged shots. It has good reach and can perform long combos to build up Charge levels. The Dragon Piercer is the Bow's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Charge levels and exploit weak point openings",
                 "strengths": "High damage, good reach, can charge shots, versatile in combat.",
                 "weaknesses": "Limited ammo, requires good timing and positioning, limited range.",
             },
             "Light Bowgun": {
-                "description": "is a ranged weapon that can deal high damage with its rapid shots. It has good mobility and can perform long combos to build up Special Ammo levels. The Wyvernblast is the Light Bowgun's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Special Ammo levels and exploit weak point openings.",
+                "description": "is a ranged weapon that can deal high damage with its rapid shots. It has good mobility and can perform long combos to build up Special Ammo levels. The Wyvernblast is the Light Bowgun's most powerful attack, dealing high damage when executed correctly. The weapon is best used by players who can maintain high Special Ammo levels and exploit weak point openings",
                 "strengths": "High damage, good mobility, can rapid shots, versatile in combat.",
                 "weaknesses": "Limited ammo, requires good timing and positioning, limited range.",
             },
             "Heavy Bowgun": {
-                "description": "is a ranged weapon that can deal high damage with its powerful shots. It has good range and can perform long combos to build up Special Ammo levels. The Wyvernheart is the Heavy Bowgun's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Special Ammo levels and exploit weak point openings.",
-                "strengths": "High damage, good range, can powerful shots, versatile in combat.",
-                "weaknesses": "Limited mobility, requires good timing and positioning, limited range.",
+                "description": "is a ranged weapon that can deal high damage with its powerful shots. It has good range and can perform long combos to build up Special Ammo levels. The Wyvernheart is the Heavy Bowgun's most powerful attack, dealing massive damage when executed correctly. The weapon is best used by players who can maintain high Special Ammo levels and exploit weak point openings",
+                "strengths": "High damage, good range, can powerful shots, versatile in combat",
+                "weaknesses": "Limited mobility, requires good timing and positioning, limited range",
             },
         }
         weapon_name = str(tracker.get_slot("weapon"))
@@ -510,10 +510,74 @@ class ActionWeaponInfo(Action):
         # Only use the match if the score is above a certain threshold
         if score > 80:
             info = weapon_data.get(best_match)
-            response = f"The {best_match} {info['description']} It has {info['strengths']}, however it also has {info['weaknesses']}."
+            response = f"The {best_match} {info['description']} It {info['strengths']}, however it also {info['weaknesses']}."
         else:
             response = f"Sorry, I don't have any information about {weapon_name}. Try again with a different weapon."
 
         dispatcher.utter_message(text=response)
 
         return [SlotSet("weapon", None)]  # Reset the slot after providing the info
+
+
+class ActionMechanicInfo(Action):
+    def name(self) -> Text:
+        return "action_mechanic_info"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+        mechanic_data = {
+            "Clutch Claw": {
+                "description": "The Clutch Claw is a tool that allows hunters to grapple onto monsters and perform special attacks. It can be used to soften monster parts, create openings for attacks, and redirect monster movements. The Clutch Claw can also be used to wound monster parts, making them more vulnerable to damage. It is an essential tool for hunters looking to maximize their damage output and exploit monster weaknesses.",
+            },
+            "Elemental Damage": {
+                "description": "Elemental damage is a type of damage that is inflicted by weapons with elemental properties. It includes Fire, Water, Ice, Thunder, and Dragon damage. Elemental damage can be used to exploit monster weaknesses and deal additional damage. Each monster has different elemental weaknesses and resistances, so it is important to use the right element against each monster. Elemental damage can be boosted with skills, armor, and decorations to maximize its effectiveness."
+            },
+            "Affinity": {
+                "description": "Affinity, also known as Critical Chance, in Monster Hunter World (MHW) is a weapon's chance to deal a bonus or a penalty to Damage on attacks. Affinity is determined by the Weapon and Skills that are being used, and is displayed as a percent value in the Attack Status portion of the Equipment Info screen. At 0% Affinity there is no chance for a bonus or penalty to damage. A positive Affinity value denotes the chance for an attack to -crit-, which applies a bonus of 25% to Physical (Raw) Damage. A negative value, on the other hand, denotes the chance to -blunder-, which applies a penalty of 25% to Physical Damage. \nPlease note that Affinity ONLY applies to Raw Damage under normal circumstances. You must have the Critical Element skill active for it to apply to Elemental Damage"
+            },
+            "Sharpness": {
+                "description": "Sharpness in Monster Hunter World (MHW) is a factor in determining the cutting power of a Weapon and its damage output. The Sharpness level of a weapon will degrade over the course of a fight. When wielding a Blademaster Weapon, it is important to keep it at its maximum Sharpness with Whetstones. This will make cutting Monster parts easier (blade weapons only) and lower the chance of an attack being deflected. In addition to reducing chance of deflection, Sharpness will also increase Raw (Physical) Damage and Elemental Damage. There are 7 levels of Sharpness. Damaging Monster parts sometimes requires a weapon to currently be at a certain level."
+            },
+            "Elderseal": {
+                "description": "Elderseal is a Weapon Mechanic that prevents certain Elder Dragons from using their special aura abilities and enrage attacks as often."
+            },
+            "Gunlance Shelling": {
+                "description": "Shelling is unique in that it can deal fixed damage to a monster's parts regardless of their defense. However, every shell consumes twice the amount of Sharpness compared to normal attacks. If Sharpness is below green (yellow and below), shelling damage is significantly reduced. Shells also cannot be fired in red Sharpness. Each Gunlance possess one of three different types of shells - Normal, Long, and Wide. The shell types differ in damage, ammo capacity, area of effect, and have different shelling bonuses. For example, Normal shells receive a bonus to Burst Fire, whereas Long shells have a bonus to Charged Shelling. In choosing your Gunlance, each type will require a slightly different play style."
+            },
+            "Charge Blade Phial": {
+                "description": "Phials are a unique feature of the Charge Blade. They are used to store energy and release it in powerful attacks. The Charge Blade has two types of Phials - Impact and Element. Impact Phials deal stun damage and can KO monsters, while Element Phials deal elemental damage. Phials are charged by attacking with the sword and shield in Sword Mode, and can be released in Axe Mode to deal massive damage."
+            },
+            "Bowgun Ammo": {
+                "description": "Ammo is the lifeblood of the Bowguns. It determines the type of damage you can inflict. Recover, Armor, and Demon rounds can heal and buff allies quickly and at a distance, while status inflicting rounds (especially Sleep and Paralysis rounds) can set a hunting party up for devastating co-ordinated attacks."
+            },
+            "Decorations": {
+                "description": "In Monster Hunter World, Decorations empower hunters to create a personalized and formidable arsenal. These precious jewels, earned through challenging Quests and battles, can be slotted into armor to unlock powerful Skills. Crafting a synergistic combination of Decorations allows hunters to amplify their strengths and mitigate weaknesses. Whether aiming for increased damage, enhanced survivability, or specialized utility, the strategic use of decorations transforms armor sets into finely tuned instruments of destruction. Embracing the possibilities offered by decorations ensures that each hunter's gear is not just protective but tailored to their unique hunting style and preferences. \nDecorations can only be obtained by completing High/Master rank quests or by using the melding pot."
+            },
+            "Sleep": {
+                "description": "Sleep is a Status Effect in Monster Hunter World (MHW). When Sleep is triggered, the Monster will topple over and remain asleep for about 40 seconds. Once the Monster is fully asleep, damage from any single source will be doubled and wake the Monster up, ending the effect. Triggering the effect requires buildup inflicted by: \nWeapons that wield Sleep damage \nBowgun Sleep Ammo \nBow Sleep Coating \nSleep Knives \nEnvironmental Hazards such as Sleeptoad"
+            },
+            "Traps": {
+                "description": "Traps allow a Hunter to incapacitate a Large Monster for a short time, setting it up for Capture or an opportunity to go on the offensive. While caught in a Trap, a Monster can be captured if it is an a Weakened state - denoted by this minimap-icon-monster-status-weak symbol on the minimap when the Scoutfly Level for that Monster is at level 3. Using two Tranq Bombs, Tranq Knives, or Tranq Ammo rounds is enough to capture any Monster, before or after it is caught in a Trap."
+            },
+            "Capture": "Capturing a monster is an alternative way to complete a hunt in Monster Hunter World. To capture a monster, you must first weaken it until it starts limping away. Once the monster is weakened, you can set a trap and lure the monster into it. Once the monster is trapped, you can use Tranq Bombs to put it to sleep and complete the capture. Capturing a monster has the same rewards as slaying it, but it can be faster and more efficient in some cases.",
+        }
+
+        mechanic_name = str(tracker.get_slot("mechanic"))
+
+        # Use FuzzyWuzzy to account for misspellings/find the closest match
+        best_match, score = process.extractOne(mechanic_name, mechanic_data.keys())
+
+        # Only use the match if the score is above a certain threshold
+        if score > 70:
+            info = mechanic_data.get(best_match)
+            response = f"{info['description']}"
+        else:
+            response = f"Sorry, I don't have any information about {mechanic_name}. Try again with a different mechanic."
+
+        dispatcher.utter_message(text=response)
+
+        return [SlotSet("mechanic", None)]  # Reset the slot after providing the info

@@ -10,30 +10,41 @@ slots:
     mappings:
       - type: from_entity
         entity: weapon
+  mechanic:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: mechanic
 entities:
-  - weapon
+  - mechanic
   - monster
+  - weapon
 actions:
   - utter_happy
-  - action_weapon_info
-  - utter_did_that_help
   - utter_help_confirm
+  - utter_did_that_help
+  - action_mechanic_info
   - action_monster_info
+  - utter_weapon_recommend
+  - utter_weapon_strong
+  - utter_greet
+  - utter_weapon_fast
+  - action_weapon_info
 intents:
   - affirm
   - ask_help
+  - ask_mechanic_info
   - ask_monster_weakness
   - ask_weapon_info
+  - ask_weapon_recommend
   - bot_challenge
   - deny
   - goodbye
   - greet
   - out_of_scope
-  - ask_mechanic_info
-  - ask_weapon_recommend
-  - want_weapon_strong
-  - want_weapon_fast
   - want_weapon_beginner
+  - want_weapon_fast
+  - want_weapon_strong
 responses:
   utter_greet:
     - text: Hello! How can I help you today?
@@ -53,11 +64,13 @@ responses:
     - text: I'm sorry, I can't help with that.
   utter_rephrase:
     - text: I'm sorry, I didn't understand. Can you try rephrasing that?
+  utter_default:
+    - text: Sorry I didn't get that. Can you rephrase?
   utter_weapon_recommend:
     - text: Your choice of weapon largely depends on your playstyle and preferences. What type of weapon are you looking for?
   utter_weapon_strong:
     - text: If you're interested in strong/big weapons, you might want to try the Great Sword, Hammer, or Charge Blade. These weapons are slow, but deal massive damage with powerful, hefty blows.
-  utter_weapon_fast_fast:
+  utter_weapon_fast:
     - text: If you're interested in fast weapons, you might want to try the Dual Blades, Sword and Shield, Long Sword or Insect Glaive. These weapons are quick and agile, allowing you to deliver rapid-flurry attacks with high mobility.
   utter_weapon_beginner:
     - text: If you're new to Monster Hunter, you might want to start with the Sword and Shield, Long Sword, or Dual Blades. These weapons are relatively easy to pick up and play, while dealing good ammounts of damage, making them great for beginners.

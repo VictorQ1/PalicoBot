@@ -37,26 +37,158 @@ stories:
       - intent: affirm
       - action: utter_happy
 
-- story: interactive_story_1
-  steps:
-  - intent: ask_help
-  - action: utter_help_confirm
-  - intent: out_of_scope
-    entities:
-    - weapon: Bow
-  - slot_was_set:
-    - weapon: Bow
-  - intent: ask_weapon_info
-    entities:
-    - weapon: Bow
-  - intent: ask_weapon_info
-    entities:
-    - weapon: Gunlance
-  - slot_was_set:
-    - weapon: Gunlance
-  - action: action_weapon_info
-  - slot_was_set:
-    - weapon: null
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: ask weapon info no greet pos
+    steps:
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_weapon_info
+      - action: action_weapon_info
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: ask weapon info no greet neg
+    steps:
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_weapon_info
+      - action: action_weapon_info
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: ask weapon recommend fast pos
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_fast
+      - action: utter_weapon_fast
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: ask weapon recommend fast neg
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_fast
+      - action: utter_weapon_fast
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: ask weapon recommend beginner pos
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_beginner
+      - action: utter_weapon_beginner
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: ask weapon recommend beginner neg
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_beginner
+      - action: utter_weapon_beginner
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: ask mechanic info pos
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_mechanic_info
+      - action: action_mechanic_info
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: ask mechanic info neg
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_mechanic_info
+      - action: action_mechanic_info
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: ask weapon strong pos
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_strong
+      - action: utter_weapon_strong
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: ask weapon strong neg
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_strong
+      - action: utter_weapon_strong
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: ask monster weakness
+    steps:
+      - intent: ask_monster_weakness
+      - action: action_monster_info
+      - action: utter_did_that_help
+
+  - story: weapon recommend fast
+    steps:
+      - intent: ask_weapon_recommend
+      - action: utter_weapon_recommend
+      - intent: want_weapon_fast
+      - action: utter_weapon_fast
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: mechanic info
+    steps:
+      - intent: ask_mechanic_info
+      - action: action_mechanic_info
+      - action: utter_did_that_help
+
+  - story: interactive_story_1
+    steps:
+      - intent: ask_mechanic_info
+      - action: action_mechanic_info
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+      - intent: ask_help
+      - action: utter_help_confirm
+      - intent: ask_mechanic_info
+      - action: action_mechanic_info
+      - action: utter_did_that_help
+      - intent: ask_monster_weakness
+      - action: action_monster_info
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
